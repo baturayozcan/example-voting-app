@@ -17,10 +17,10 @@ spec:
     spec:
       containers:
       - image: 130575395405.dkr.ecr.us-east-1.amazonaws.com/vote
+        imagePullPolicy: Always
         name: vote
         ports:
         - containerPort: 80
           name: vote
-      imagePullPolicy: Always
       imagePullSecrets:
         - name: regcred
