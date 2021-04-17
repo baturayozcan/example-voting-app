@@ -21,5 +21,6 @@ spec:
         ports:
         - containerPort: 80
           name: vote
+      imagePullPolicy: Always
       imagePullSecrets:
         - name: regcred
