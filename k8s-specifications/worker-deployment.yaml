@@ -18,3 +18,5 @@ spec:
       containers:
       - image: 130575395405.dkr.ecr.us-east-1.amazonaws.com/worker
         name: worker
+      imagePullSecrets:
+        - name: regcred
